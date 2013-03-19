@@ -8,11 +8,13 @@
           em todo Brasil. É rápido fácil e completamente grátuito.
         </p>
       </div>
-      <a class="btn btn-primary btn-large" href="screen-9fb609fb10-uinformacoessistema.html">
-        <h4 style="text-align: center;">
-          Quero cadastrar meu currículo agora!
-        </h4>
-      </a>
+      <?php
+      
+        $link = heading('Quero cadastrar meu currículo agora!', 4, 'style="text-align: center"');
+
+        echo(anchor('url', $link, 'class="btn btn-primary btn-large"'));
+
+      ?>
     </div>
     <div>
       <h3 style="text-align: center;">
