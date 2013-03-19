@@ -1,0 +1,51 @@
+  .entrar a{
+    float: right;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .container {
+     
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 540px;
+      height: 300;
+  }
+
+  .login-index-form {
+      width: 500px;
+      height: 400px;
+      
+  }
+  .depoimentos-list {
+      background-color: white;
+      height: 300px; 
+      margin: 0px;
+  }
+
+  #text-element-email {
+      margin-left: 30px;
+      width: 400px;
+      height: 50px;
+      font-size: 21px;
+      border: 1px solid;
+  }
+  #text-element-senha {
+      margin-left: 30px;
+      width: 400px;
+      height: 50px;
+      font-size: 21px;
+      border: 1px solid;
+  }
+
+  .btn-entrar {
+      margin-left: 350px;
+  }
+
+  .footer{
+      width: 100%;
+      height: 190px;
+      background-color: black;
+
+  }
