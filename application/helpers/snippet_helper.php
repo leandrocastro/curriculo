@@ -47,7 +47,7 @@
 			              </li>
 			              <li class="">
 			                <a href="#">
-			                  %1% Inforções de usuário %/1%
+			                  %1% Informações de usuário %/1%
 			                </a>
 			              </li>
 			              <li class="">
