@@ -2,16 +2,16 @@
 
 class Home extends CI_Controller {
 
+	// --------------------------------------------------------------------
+	/**
+	* Método principal chamado ao acessar a página principal
+	*
+	* @return	view principal
+	* @author 	Leandro Castro <leandrocastro@gmail.com>
+	*/
 	public function index()
 	{
-		// Título da página
-		$header['title'] = "Só Currículo - Cadastre seu currículo grátis e consiga um novo emprego";
-		// Descrição página cabeçalho (meta)
-		$header['descricao_header'] = 'Endereço ou coisas afim';
-		// Palavras-chave (meta)
-		$header['palavras_chave'] = 'currículos, emprego, vagas, oportunidades';
-
-		$this->load->view('html_header', $header);
+		$this->load->view('html_header', setHeader('Cadastre seu currículo grátis e consiga um novo emprego'));
 		$this->load->view('menu');
 		$this->load->view('principal');
 		$this->load->view('html_footer');

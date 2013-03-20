@@ -1,3 +1,5 @@
+  
+/* Página inicial do usuário (cadastro de currículo) */
   .entrar a{
     float: right;
     padding: 10px;
@@ -46,6 +48,38 @@
   .footer{
       width: 100%;
       height: 190px;
+      margin-top: 220px;
       background-color: black;
 
   }
+/* FIM da página inicial do usuário (cadastro de currículo) */
+
+
+/* Primeira etapa do cadastro */
+    .inputform{
+        width: 500px;
+        height: 40px;
+        font-size: 21px;
+        border: 1px solid;
+        
+    }
+    
+    #inputemail{
+        width: 500px;
+        height: 40px;
+        font-size: 21px;
+        border: 1px solid;
+    }
+    
+    #inputsenha{
+        width: 500px;
+        height: 40px;
+        font-size: 21px;
+        border: 1px solid;
+    }
+    
+    .btn-form-cadastro{
+           margin-left: 300px;
+    }
+
+/* FIM da primeira etapa do cadastro */      

@@ -12,7 +12,7 @@
       
         $link = heading('Quero cadastrar meu currículo agora!', 4, 'style="text-align: center"');
 
-        echo(anchor('url', $link, 'class="btn btn-primary btn-large"'));
+        echo(anchor('/curriculo/cadastrar/informacoes-basicas', $link, 'class="btn btn-primary btn-large"'));
 
       ?>
     </div>

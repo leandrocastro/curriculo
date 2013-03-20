@@ -30,6 +30,4 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
       </script>
     <![endif]-->
-    <style>
-    </style>
   </head>
