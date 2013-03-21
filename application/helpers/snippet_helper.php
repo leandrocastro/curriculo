@@ -24,7 +24,6 @@
 
 				$return = (str_replace('%'.$i.'%', '<strong>', $return));
 				$return = (str_replace('%/'.$i.'%', '</strong>', $return));
-				
 			} else {
 
 				$return = (str_replace('%'.$i.'%', '', $return));
@@ -46,20 +45,20 @@
 			                </h5>
 			              </li>
 			              <li class="">
-			                <a href="#">
-			                  %1% Inforções de usuário %/1%
+			                <a href="/curriculo/cadastrar/informacoes-basicas">
+			                  %1% Informações de usuário %/1%
 			                </a>
 			              </li>
 			              <li class="">
-			                <a href="#">
+			                <a href="/curriculo/cadastrar/apresentacao">
 			                  %2% Apresentação %/2%
 			                </a>
 			              </li>
 			              <li class="">
-			                <a href="#">
+			                <a href="/curriculo/cadastrar/localizacao">
 			                  %3% Localização %/3%
 			                </a>
-			                <a href="#">
+			                <a href="/curriculo/cadastrar/informacoes-pessoais">
 			                  %4% Informações pessoais %/4%
 			                </a>
 			                <a href="#">

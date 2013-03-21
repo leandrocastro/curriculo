@@ -55,7 +55,7 @@
 /* FIM da página inicial do usuário (cadastro de currículo) */
 
 
-/* Primeira etapa do cadastro */
+/* Primeira etapa do cadastro - Informações básicas */
     .inputform{
         width: 500px;
         height: 40px;
@@ -83,3 +83,40 @@
     }
 
 /* FIM da primeira etapa do cadastro */      
+
+/* Segunda etapa do cadastro - Apresentação */
+.inputform{
+          width: 500px;
+          height: 40px;
+          font-size: 21px;
+          border: 1px solid;
+          
+      }
+      
+      #inputemail{
+          width: 500px;
+          height: 40px;
+          font-size: 21px;
+          border: 1px solid;
+      }
+      
+      #inputsenha{
+          width: 500px;
+          height: 40px;
+          font-size: 21px;
+          border: 1px solid;
+      }
+      
+      #btn-form-cadastro{
+             margin-left: 400px;
+      }
+      
+      #text-area-cadastro{
+             width: 300px;
+             height: 200px;
+      }
+      
+      .btn-photo{
+          margin-top: 10px;
+
+/* FIM da segunda etapa do cadastro */  

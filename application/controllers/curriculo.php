@@ -63,19 +63,50 @@ class Curriculo extends CI_Controller {
 
 	// --------------------------------------------------------------------
 	/**
-	* Primeira etapa do cadastro (1)
-	*
+	* Etapas do cadastro
+	* O numero referencia a etapa atual, inicia em 1 e finaliza em 9
 	* @return	View do cadastro
 	*/
 
 	protected function informacoesBasicas()
 	{
 		$data['sidebarEtapas'] = sidebarEtapasCadastroCurriculo(1);
-		$this->load->view('html_header', setHeader('Informações básicas teste'));
+		$this->load->view('html_header', setHeader('Cadastro de informações básicas'));
 		$this->load->view('menu');
 		$this->load->view('cadastroInformacoesBasicas', $data); //Será substituida
 		$this->load->view('html_footer');
 	}
+
+	protected function apresentacao()
+	{
+		$data['sidebarEtapas'] = sidebarEtapasCadastroCurriculo(2);
+		$this->load->view('html_header', setHeader('Apresentação'));
+		$this->load->view('menu');
+		$this->load->view('cadastroApresentacao', $data); //Será substituida
+		$this->load->view('html_footer');
+	}
+
+	protected function localizacao()
+	{
+		$data['sidebarEtapas'] = sidebarEtapasCadastroCurriculo(3);
+		$this->load->view('html_header', setHeader('Localização'));
+		$this->load->view('menu');
+		$this->load->view('cadastroLocalizacao', $data); //Será substituida
+		$this->load->view('html_footer');
+	}
+
+	protected function informacoesPessoais()
+	{
+		$data['sidebarEtapas'] = sidebarEtapasCadastroCurriculo(4);
+		$this->load->view('html_header', setHeader('Informações pessoais'));
+		$this->load->view('menu');
+		$this->load->view('cadastroInformacoesPessoais', $data); //Será substituida
+		$this->load->view('html_footer');
+	}
+
+
+
+
 }
 
 /* End of file home.php */

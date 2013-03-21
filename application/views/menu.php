@@ -2,12 +2,12 @@
     <div class="navbar navbar-fixed-top navbar-inverse">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#">
+          <a class="brand" href="/">
             Só Currículo
           </a>
           <ul class="nav">
             <li>
-              <a href="#">
+              <a href="/curriculo/cadastrar/informacoes-basicas">
                 Cadastrar Currículo
               </a>
             </li>
