@@ -61,19 +61,19 @@
 			                <a href="/curriculo/cadastrar/informacoes-pessoais">
 			                  %4% Informações pessoais %/4%
 			                </a>
-			                <a href="#">
+			                <a href="/curriculo/cadastrar/cargo-pretendido">
 			                  %5% Cargo pretendido %/5%
 			                </a>
-			                <a href="#">
+			                <a href="/curriculo/cadastrar/formacao">
 			                  %6% Formação %/6%
 			                </a>
-			                <a href="#">
+			                <a href="/curriculo/cadastrar/experiencia-profissional">
 			                  %7% Experiência profissional %/7%
 			                </a>
-			                <a href="#">
+			                <a href="/curriculo/cadastrar/lingua-estrangeira">
 			                  %8% Lingua estrangeira %/8%
 			                </a>
-			                <a href="#">
+			                <a href="/curriculo/cadastrar/cursos-e-seminarios">
 			                  %9% Cursos e seminários %/9%
 			                </a>
 			              </li>

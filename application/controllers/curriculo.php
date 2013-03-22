@@ -45,8 +45,8 @@ class Curriculo extends CI_Controller {
 					$this->experienciaProfissional();
 					break;
 
-				case 'lingua-extrangeira':
-					$this->linguaExtrangeira();
+				case 'lingua-estrangeira':
+					$this->linguaEstrangeira();
 					break;
 
 				case 'cursos-e-seminarios':
@@ -104,7 +104,50 @@ class Curriculo extends CI_Controller {
 		$this->load->view('html_footer');
 	}
 
+	protected function cargoPretendido()
+	{
+		$data['sidebarEtapas'] = sidebarEtapasCadastroCurriculo(5);
+		$this->load->view('html_header', setHeader('Cargo pretendido'));
+		$this->load->view('menu');
+		$this->load->view('cadastroCargoPretendido', $data); //Será substituida
+		$this->load->view('html_footer');
+	}
 
+	protected function formacao()
+	{
+		$data['sidebarEtapas'] = sidebarEtapasCadastroCurriculo(6);
+		$this->load->view('html_header', setHeader('Formação acadêmica'));
+		$this->load->view('menu');
+		$this->load->view('cadastroFormacao', $data); //Será substituida
+		$this->load->view('html_footer');
+	}
+
+	protected function experienciaProfissional()
+	{
+		$data['sidebarEtapas'] = sidebarEtapasCadastroCurriculo(7);
+		$this->load->view('html_header', setHeader('Experiência profissional'));
+		$this->load->view('menu');
+		$this->load->view('cadastroExperienciaProfissional', $data); //Será substituida
+		$this->load->view('html_footer');
+	}
+
+	protected function linguaEstrangeira()
+	{
+		$data['sidebarEtapas'] = sidebarEtapasCadastroCurriculo(8);
+		$this->load->view('html_header', setHeader('Experiência profissional'));
+		$this->load->view('menu');
+		$this->load->view('cadastroLinguaEstrangeira', $data); //Será substituida
+		$this->load->view('html_footer');
+	}
+
+	protected function cursosSeminarios()
+	{
+		$data['sidebarEtapas'] = sidebarEtapasCadastroCurriculo(9);
+		$this->load->view('html_header', setHeader('Cursos e seminários'));
+		$this->load->view('menu');
+		$this->load->view('cadastroCursosSeminarios', $data); //Será substituida
+		$this->load->view('html_footer');
+	}
 
 
 }
