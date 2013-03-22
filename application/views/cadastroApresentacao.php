@@ -2,7 +2,7 @@
       <div class="row-fluid">
         <?php echo $sidebarEtapas ?>
         <div class="span9">
-          <form>
+          <form action="/curriculo/cadastrar/apresentacao" id="frmapresentacao" method="POST">
             <div class="well">
               <div>
                 <h1>
@@ -41,7 +41,7 @@
                     </div>
                   </div>
                 </div>
-                <a id="btn-form-cadastro" class="btn btn-success btn-large" href="screen-7fad08cd50-ulocalizacao.html">
+                <a id="btn-form-cadastro" onclick='document.getElementById("frmapresentacao").submit()' class="btn btn-success btn-large" >
                   Pronto! Próxima etapa
                 </a>
               </form>

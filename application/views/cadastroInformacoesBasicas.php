@@ -2,7 +2,7 @@
       <div class="row-fluid">
         <?php echo $sidebarEtapas ?>
         <div class="span9">
-          <form>
+          <form action="/curriculo/cadastrar/informacoes-basicas" method="POST" id="frmCadastro">
             <div class="well">
               <div>
                 <h1>
@@ -32,7 +32,7 @@
                   </label>
                   <input id="inputsenha" name="textinput4" type="password">
                 </div>
-                <a class="btn btn-success btn-large btn-form-cadastro" href="screen-5d1c02f5c5-uapresentacao.html">
+                <a class="btn btn-success btn-large btn-form-cadastro" onclick='document.getElementById("frmCadastro").submit()'>
                   Pronto! Próxima etapa
                 </a>
               </form>
