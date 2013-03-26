@@ -70,6 +70,24 @@ class Curriculo extends CI_Controller {
 
 	protected function informacoesBasicas()
 	{
+
+		$this->load->library('form_validation');
+
+		if ($this->input->post())
+		{
+			$this->form_validation->set_rules('input-nome', 'Nome', 'trim|xss_clean|required|min_length[5]|max_length[100]');
+			$this->form_validation->set_rules('input-email', 'Email', 'trim|xss_clean|valid_email|required|is_unique[tb_usuario.email]');
+			$this->form_validation->set_rules('input-senha', 'Senha', 'trim|css_clean|required|min_length[4]|max_length[100]');
+
+			if (! $this->form_validation->run())
+			{
+				$data['validation'] = 'Ops! Algo está errado!';
+			} else {
+
+			}	
+
+		}
+
 		$data['sidebarEtapas'] = sidebarEtapasCadastroCurriculo(1);
 		$this->load->view('html_header', setHeader('Cadastro de informações básicas'));
 		$this->load->view('menu');
