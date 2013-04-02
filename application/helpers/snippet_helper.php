@@ -83,3 +83,25 @@
         return $return;
 	}
 
+
+	function getSession($parametros = '')
+	{
+		$ci =& get_instance();
+		$ci->load->library('session');
+
+		$sessionData = $ci->session->all_userdata();
+		switch ($parametros) {
+			case 'id':
+				return $sessionData['id'];
+				break;
+			case 'email':
+				return $sessionData['email'];
+				break;
+			case 'nome':
+				return $sessionData['nome'];
+				break;
+			default:
+				return $sessionData;
+				break;
+		}
+	}

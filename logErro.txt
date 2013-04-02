@@ -1,0 +1,18 @@
+27-03-2013 23:18:08 Erro na linha 58 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Erro ao resgatar o nome
+27-03-2013 23:21:16 Erro na linha 60 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Erro ao resgatar o nome
+27-03-2013 23:21:41 Erro na linha 60 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Erro ao resgatar o nome
+27-03-2013 23:21:45 Erro na linha 60 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Erro ao resgatar o nome
+27-03-2013 23:22:45 Erro na linha 60 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Erro ao resgatar o nome
+28-03-2013 01:50:00 Erro na linha 78 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Erro ao resgatar o nome
+28-03-2013 01:50:36 Erro na linha 78 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Erro ao resgatar o nome.
+28-03-2013 01:54:40 Erro na linha 56 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>O usuário não existe.
+28-03-2013 01:54:51 Erro na linha 56 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>O usuario não existe.
+28-03-2013 01:55:04 Erro na linha 56 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>O usuario inexistente.
+28-03-2013 01:56:43 Erro na linha 56 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>O usuario inexistente.
+28-03-2013 01:56:51 Erro na linha 56 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>O usuario inexistente.
+28-03-2013 01:57:53 Erro na linha 56 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Usuario inexistente.
+28-03-2013 01:59:29 Erro na linha 56 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Usuario inexistente.
+28-03-2013 02:01:48 Erro na linha 56 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Usuario inexistente.
+28-03-2013 02:55:44 Erro na linha 62 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.
+28-03-2013 02:56:20 Erro na linha 62 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.
+28-03-2013 02:56:22 Erro na linha 62 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.

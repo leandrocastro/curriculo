@@ -28,7 +28,7 @@
                     Email
                   </label>
                   <input id="inputemail" name="input-email" value="<?php echo set_value('input-email') ?>" required type="email" placeholder="Email">
-                  <?php echo form_error('inputemail'); ?>
+                  <?php echo form_error('input-email'); ?>
                 </div>
                 <div class="control-group">
                   <label for="textinput4">

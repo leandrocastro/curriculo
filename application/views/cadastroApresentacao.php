@@ -2,34 +2,19 @@
       <div class="row-fluid">
         <?php echo $sidebarEtapas ?>
         <div class="span9">
+          <?php echo isset($validation) ? $validation : '' ?>
           <form action="/curriculo/cadastrar/apresentacao" id="frmCadastro" method="POST">
             <div class="well">
               <div>
                 <h1>
                   Apresentação
                 </h1>
-                Capriche na foto e escreva uma breve apresentação.
+                Escreva uma breve apresentação. Fale sobre você e sobre a vaga que procura.
               </div>
               <div class="control-group">
               </div>
               <form>
-                <div class="control-group">
-                </div>
-                <div class="control-group">
-                </div>
-                <div class="control-group">
-                </div>
-                <div class="control-group">
-                </div>
                 <div class="row-fluid">
-                  <div class="span5">
-                    <img src="http://i.imgur.com/Asf2J.jpg" style=" width: 300px; height: 250px;">
-                    <a class="btn btn-warning btn-photo" href="#">
-                      <div style="text-align: center;">
-                        Escolher minha foto
-                      </div>
-                    </a>
-                  </div>
                   <div class="span5">
                     <div class="control-group">
                     </div>
@@ -37,13 +22,17 @@
                       <label for="textarea1">
                         Apresentação
                       </label>
-                      <textarea id="text-area-cadastro" name="textarea1"></textarea>
+                      <textarea id="text-area-cadastro" onkeyup="limitaTextarea(this.value)" required Minlength="10" Maxlength="250" name="input-apresentacao"><?php echo set_value('input-apresentacao') ?></textarea>
+                      <?php echo form_error('input-apresentacao'); ?>
+                      <br />
+                      Você pode inserir mais <span id="contador"><?php echo isset($tamanho) ? $tamanho : '250' ?></span> caracteres.
+
                     </div>
                   </div>
                 </div>
-                <a id="btn-form-cadastro" onclick='document.getElementById("frmCadastro").submit()' class="btn btn-success btn-large" >
-                  Pronto! Próxima etapa
-                </a>
+                  <a id="btn-form-cadastro" onclick='document.getElementById("frmCadastro").submit()' class="btn btn-success btn-large" >
+                    Pronto! Próxima etapa
+                  </a>
               </form>
             </div>
           </form>

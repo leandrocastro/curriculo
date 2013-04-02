@@ -1,0 +1,9 @@
+29-03-2013 01:29:33 Erro na linha 62 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.
+29-03-2013 01:33:02 Erro na linha 62 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.
+29-03-2013 05:55:58 Erro na linha 137 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao do endereco.
+29-03-2013 16:08:31 Erro na linha 166 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao do endereco.
+29-03-2013 16:40:47 Erro na linha 167 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.
+29-03-2013 16:42:32 Erro na linha 167 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.
+29-03-2013 16:42:35 Erro na linha 167 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.
+29-03-2013 16:42:57 Erro na linha 167 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.
+29-03-2013 16:43:04 Erro na linha 167 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.

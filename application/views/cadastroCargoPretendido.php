@@ -2,7 +2,8 @@
       <div class="row-fluid">
         <?php echo $sidebarEtapas ?>
         <div class="span9">
-          <form>
+          <?php echo isset($validation) ? $validation : '' ?>
+          <form action="/curriculo/cadastrar/cargo-pretendido" id="frmCadastro" method="POST">
             <div class="well">
               <div>
                 <h1>
@@ -22,22 +23,22 @@
                   <label for="textinput1">
                     Cargo 1:
                   </label>
-                  <input name="textinput1" type="">
+                  <input name="input-cargo1" type="text">
                 </div>
                 <div class="control-group">
                   <label for="textinput3">
                     Cargo 2:
                   </label>
-                  <input name="textinput3" type="">
+                  <input name="input-cargo2" type="text">
                 </div>
                 <div class="control-group">
                   <label for="textinput5">
                     Cargo 3:
                   </label>
-                  <input name="textinput5" type="">
+                  <input name="input-cargo3" type="text">
                 </div>
-                <a class="btn btn-success btn-large btn-form-cadastro" href="screen-1755da83da-uformacao.html">
-                  Pronto! Próxima etapa
+                <a id="btn-form-cadastro" onclick='document.getElementById("frmCadastro").submit()' class="btn btn-success btn-large" >
+                    Pronto! Próxima etapa
                 </a>
               </form>
             </div>

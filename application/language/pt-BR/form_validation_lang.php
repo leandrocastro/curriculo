@@ -18,4 +18,6 @@ $lang['integer'] = 'O campo %s deve conter um número inteiro.';
 $lang['matches'] = 'O campo %s não corresponde ao %s campo.';
 $lang['is_natural'] = 'O campo %s deve conter apenas números positivos.';
 $lang['is_natural_no_zero'] = 'O campo %s deve conter um número maior que zero.';
+$lang['is_unique'] = "Este email já está cadastrado.";
+
 ?>
