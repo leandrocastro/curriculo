@@ -297,7 +297,17 @@ class Usuario_model extends CI_Model {
         {
         	if (! getSession('id'))
             {
+                 throw new MyException('Ocorreu um erro ao tentar resgatar as informações');
+            }
+            else
+            {
 
+                $this->db->select('tipo_formacao, area_de_estudo, data_inicio, data_fim')
+                ->from('Tb_formacao')
+                ->where('usuario_id', getSession('id'))
+                ->order_by('id', 'DESC');
+                $return = $this->db->get()->result_array();
+                return count($return) > 0 ? $return : FALSE;
 
             }
 

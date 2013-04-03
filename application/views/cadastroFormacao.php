@@ -14,18 +14,8 @@
               </div>
               <div class="control-group">
               </div>
-                <span class="label label-warning">
-                  <h4>
-                    Superior em Análise de Sistemas
-                  </h4>
-                </span>
                 <div class="control-group">
                 </div>
-                <span class="label label-warning">
-                  <h4>
-                    MBA em Gestão de Projetos de TI
-                  </h4>
-                </span>
                 <label for="textinput1">
                   Escolaridade:
                 </label>
@@ -65,6 +55,7 @@
                       <option value="11">Novembro</option>
                       <option value="12">Dezembro</option>
                     </select>
+                    <?php echo form_error('input-inicio-mes'); ?>
                     Ano:
                     <select name="input-inicio-ano">
                       <option value=""></option>
@@ -135,6 +126,7 @@
                       <option value="1941">1941</option>
                       <option value="1940">1940</option>
                     </select>
+                    <?php echo form_error('input-inicio-ano'); ?>
                      <label for="textinput1">
                   Término:
                   </label>
@@ -154,6 +146,7 @@
                       <option value="11">Novembro</option>
                       <option value="12">Dezembro</option>
                     </select>
+                    <?php echo form_error('input-fim-mes'); ?>
                     Ano:
                     <select name="input-fim-ano">
                       <option value=""></option>
@@ -224,10 +217,26 @@
                       <option value="1941">1941</option>
                       <option value="1940">1940</option>
                     </select>
+                    <?php echo form_error('input-fim-ano'); ?>
                   </div>
                 <a class="btn btn-warning btn-small" onclick='document.getElementById("frmCadastro").submit()' href="#">
                   Adicionar formação
                 </a>
+                <?php
+                  if (! empty($formacoesCadastradas))
+                  {
+                    echo '<br /><br />';
+                    foreach ($formacoesCadastradas as $key => $value) 
+                    {
+                        echo '<span class="label label-warning">';
+                        echo '<h4>';
+                        echo $value['tipo_formacao'].' '.$value['area_de_estudo'].' '.date('m/Y', strtotime($value['data_inicio'])) .' '.date('m/Y', strtotime($value['data_fim']));
+                        echo '</h4>';
+                        echo "</span>";
+                    }
+                  }
+                ?>
+
               </form>
                 <div class="control-group">
                 </div>

@@ -275,14 +275,17 @@ class Curriculo extends CI_Controller {
 	{
 		$this->load->library('form_validation');
 
+		$u = new Usuario_model();
+		
 		if ($this->input->post())
 		{
 			$this->form_validation->set_rules('input-escolaridade', 'Escolaridade', 'trim|xss_clean|required');
 			$this->form_validation->set_rules('input-area', 'Área', 'trim|xss_clean');
-			$this->form_validation->set_rules('input-inicio-mes', 'Mês', 'trim|xss_clean');
-			$this->form_validation->set_rules('input-inicio-ano', 'Ano', 'trim|xss_clean');
-			$this->form_validation->set_rules('input-fim-mes', 'Mês', 'trim|xss_clean');
-			$this->form_validation->set_rules('input-fim-ano', 'Ano', 'trim|xss_clean');
+			$this->form_validation->set_rules('input-inicio-mes', 'Mês', 'trim|required|xss_clean');
+			$this->form_validation->set_rules('input-inicio-ano', 'Ano', 'trim|required|xss_clean');
+			$this->form_validation->set_rules('input-fim-mes', 'Mês', 'trim|required|xss_clean');
+			$this->form_validation->set_rules('input-fim-ano', 'Ano', 'trim|required|xss_clean');
+
 
 			if (! $this->form_validation->run())
 			{
@@ -290,8 +293,6 @@ class Curriculo extends CI_Controller {
 			} 
 			else 
 			{
-				$u = new Usuario_model();
-				
 				$data_inicio = '';
 				$data_fim = '';
 
@@ -312,17 +313,12 @@ class Curriculo extends CI_Controller {
 
 				if ($u->setFormacao($dados))
 				{
-					$data['formacoesCadastradas'] = $u->getFormacao();
-
 					redirect('curriculo/cadastrar/formacao');
 				}
 			}	
 		}
 
-
-
-
-
+		$data['formacoesCadastradas'] = $u->getFormacao();
 		$data['sidebarEtapas'] = sidebarEtapasCadastroCurriculo(6);
 		$this->load->view('html_header', setHeader('Formação acadêmica'));
 		$this->load->view('menu');

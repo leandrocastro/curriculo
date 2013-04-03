@@ -7,3 +7,4 @@
 29-03-2013 16:42:35 Erro na linha 167 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.
 29-03-2013 16:42:57 Erro na linha 167 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.
 29-03-2013 16:43:04 Erro na linha 167 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.
+03-04-2013 04:25:35 Erro na linha 272 em C:\projetos\Curriculo\application\models\Usuario_model.php: <b>Falta parametros para inclusao.
