@@ -236,11 +236,10 @@
                     }
                   }
                 ?>
-
               </form>
                 <div class="control-group">
                 </div>
-                <a class="btn btn-success btn-large btn-form-cadastro" href="screen-dd9fd18723-uexperienciaprofissional.html">
+                <a class="btn btn-success btn-large btn-form-cadastro" href="/curriculo/cadastrar/experiencia-profissional">
                   Pronto! Próxima etapa
                 </a>
             </div>

@@ -328,6 +328,56 @@ class Curriculo extends CI_Controller {
 
 	protected function experienciaProfissional()
 	{
+
+		$this->load->library('form_validation');
+
+		$u = new Usuario_model();
+		
+		if ($this->input->post())
+		{
+			$this->form_validation->set_rules('input-empresa', 'Empresa', 'trim|xss_clean|required');
+			$this->form_validation->set_rules('input-cargo', 'Cargo', 'trim|xss_clean|required');
+			$this->form_validation->set_rules('input-inicio-mes', 'Mês', 'trim|required|xss_clean');
+			$this->form_validation->set_rules('input-inicio-ano', 'Ano', 'trim|required|xss_clean');
+			$this->form_validation->set_rules('input-fim-mes', 'Mês', 'trim|xss_clean');
+			$this->form_validation->set_rules('input-fim-ano', 'Ano', 'trim|xss_clean');
+			$this->form_validation->set_rules('input-atividades-desempenhadas', 'Atividades desempenhadas', 'trim|xss_clean');
+
+
+			if (! $this->form_validation->run())
+			{
+				$data['validation'] = 'Ops! Algo está errado!';
+			} 
+			else 
+			{
+				$data_inicio = '';
+				$data_fim = '';
+
+				if ($this->input->post('input-inicio-ano') != '' && $this->input->post('input-inicio-mes')!= '' )
+					$data_inicio = $this->input->post('input-inicio-ano').'-'.$this->input->post('input-inicio-mes').'-'.'01';
+				
+				if ($this->input->post('input-fim-ano') != '' && $this->input->post('input-fim-mes')!= '' )
+					$data_fim = $this->input->post('input-fim-ano').'-'.$this->input->post('input-fim-mes').'-'.'01';
+
+				$dados = array
+				(
+					'empresa' => $this->input->post('input-empresa')
+					,'cargo' => $this->input->post('input-cargo')
+					,'atividades_desempenhadas' => $this->input->post('input-atividades-desempenhadas')
+					,'data_inicio' => $data_inicio
+					,'data_fim' => $data_fim
+					,'usuario_id' => getSession('id')
+				);
+
+				if ($u->setExperienciaProfissional($dados))
+				{
+					redirect('curriculo/cadastrar/experiencia-profissional');
+				}
+			}	
+		}
+
+		$data['experienciaProfissional'] = $u->getExperienciaProfissional();
+
 		$data['sidebarEtapas'] = sidebarEtapasCadastroCurriculo(7);
 		$this->load->view('html_header', setHeader('Experiência profissional'));
 		$this->load->view('menu');

@@ -319,7 +319,58 @@ class Usuario_model extends CI_Model {
 
     }
 
+    public function setExperienciaProfissional(array $dados)
+    {
+       try
+        {
+            $return = FALSE;
+            if (! $dados || ! getSession('id'))
+            {
+                throw new MyException('Falta parametros para inclusao.');
+            }
+            else
+            {
+                if (! $this->db->insert('Tb_experiencia_profissional', $dados))
+                {
+                    throw new MyException('Erro na inclusao dos dados.');
+                }
+                else
+                {
+                    $return = TRUE;
+                }
+         
+            }
+            return $return;
+        }
+        catch (MyException $e) 
+        {
+          echo $e->errorMessage();
+        }
+    }
 
+    public function getExperienciaProfissional()
+    {
+       try
+        {
+            if (! getSession('id'))
+            {
+                 throw new MyException('Ocorreu um erro ao tentar resgatar as informações');
+            }
+            else
+            {
 
+                $this->db->select('empresa, cargo, data_inicio, data_fim, atividades_desempenhadas')
+                ->from('tb_experiencia_profissional')
+                ->where('usuario_id', getSession('id'))
+                ->order_by('id', 'DESC');
+                $return = $this->db->get()->result_array();
+                return count($return) > 0 ? $return : FALSE;
+            }
+        }
+        catch (MyException $e) 
+        {
+          echo $e->errorMessage();
+        }
+    }
 }
 
