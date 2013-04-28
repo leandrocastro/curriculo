@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `so_curricculo`
+-- Database: `so_curriculo`
 --
-CREATE DATABASE `so_curricculo` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `so_curricculo`;
+CREATE DATABASE `so_curriculo` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `so_curriculo`;
 
 -- --------------------------------------------------------
 
