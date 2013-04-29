@@ -3,7 +3,7 @@
 /**
  * Layout Class
  *
- * Processes views in default layouts
+ * add content of views in layout file
  *
  * @subpackage Libraries
  * @author Reiny Júnior <reinyjunior@gmail.com>
@@ -64,9 +64,9 @@ class Layout {
 	 */
 	public function render($view, $data = null, $file = null)
 	{
-		$this->file_exists();
-
 		$this->path_exists();
+
+		$this->file_exists();
 
 		$content = $this->output($view);
 
@@ -87,7 +87,7 @@ class Layout {
 
 		if( ! is_file($file))
 		{
-      show_error("Layout file \"{$this->file}\" do not exists !");
+			show_error("Layout file \"{$this->file}\" do not exists !");
 		}
 	}
 
@@ -103,7 +103,7 @@ class Layout {
 	{
 		if( ! is_dir(set_realpath($this->path)))
 		{
-      show_error('Layout directory base do not exists !');
+			show_error('Directory layouts base do not exists !');
 		}
 	}
 
